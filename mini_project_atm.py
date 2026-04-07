@@ -39,7 +39,7 @@ choose 1 to deposit
 choose 2 for withdraw
 choose 3 to check balance
 choose 4 to exit""")  
-        choice = int(input("enter your choice: "))
+        choice = int(input("\nenter your choice: "))
         if choice == 1:
             balance += deposit()
         elif choice == 2:
@@ -47,22 +47,15 @@ choose 4 to exit""")
         elif choice == 3:
             check_balance()
         elif choice == 4:
-            print("THANK YOU Visit Again") 
+            print("\nTHANK YOU Visit Again") 
             break
-    
-        
+        else:
+            print("\n invalid choice, enter again")
+           
 else:
     print("your account has been blocked for 24hrs ")  
 
-choice = int(input("enter your choice"))
-if choice == 1:
-    balance += deposit()
-elif choice == 2:
-    balance -= withdraw()
-elif choice == 3:
-    check_balance()
-elif choice == 4:
-    print("THANK YOU Visit Again") 
+
 
 
 
